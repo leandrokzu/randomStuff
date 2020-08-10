@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    font: 700 1.2rem "Roboto";
+    background-color: #f1f5f8;
+    letter-spacing: 2;
+    margin: 0;
+}
+
+nav {
+    padding: 0 2rem;
+    background-color: white;
+    color: #F78608;
+}
+
+nav a{
+    color: #282828;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #F78608;
+}
+
+.nav-center{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 620px;
+
+    background-color: white;
+    color: #F78608;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+
+main {
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.container {
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #282828;
+
+    padding: .6rem 1rem;
+    border-radius: .4rem;
+}
+
+span{
+    color: #F78608;
+}
+
+button{
+    font-family:"Open Sans";
+    font-weight: 700;
+    border: 2px solid #282828;
+    border-radius: .4rem;
+    letter-spacing: 3;
+    
+    padding: 1rem;
+    background-color: transparent;
+    color: #282828;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+    background-color: #282828;
+    transition: 0.3s;
+}
+
+@media (max-width: 700px){
+    nav{
+        padding: 0 0.5rem;
+    }
+
+    .nav-center{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+}
