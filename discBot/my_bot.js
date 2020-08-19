@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const prefix = "!";
+const prefix = "?";
 const token = "NzQzNDY0ODY3Njc1MjQyNTc2.XzVDnQ.DAAyql-4B160HSQbTFnXtjR3B2w"
-const commands = ['wow', 'ah', 'yamete', "an", "happy", "ayaya", "begone", "oof", "rapaz", "ratinho", "uepa"];
+const commands = ['wow', 'ah', 'yamete', "an", "happy", "ayaya", "begone", "oof", "rapaz", "ratinho", "uepa", "pressao"];
 
 bot.on('message', message => {
     //para ignorar caso a msg seja do proprio bot
@@ -10,7 +10,7 @@ bot.on('message', message => {
     //para ignorar msg que não tenham o prefixo
     if (!message.content.startsWith(prefix)) return;
     //filtrando o comando para usa-lo no if
-    const command = message.content.split("!")[1];
+    const command = message.content.split("?")[1];
     //criando mensagem de help
     const helpMessage = new Discord.MessageEmbed()
         .setColor('#0099ff')
@@ -18,7 +18,7 @@ bot.on('message', message => {
         .setDescription('Cada comando irá tocar algum som bem doido.')
 
     commands.forEach(item => {
-        helpMessage.addField("!"+item, '\u200B');
+        helpMessage.addField("?"+item, '\u200B');
     });
 
     bot.user.setActivity("Sua mãe pela janela");
@@ -37,7 +37,7 @@ bot.on('message', message => {
     } else if (command == 'bye') {
         voiceChannel.leave();
     } else {
-        return message.channel.send("Aye! Parece que esse comando não existe, digite !help para ver os comandos disponíveis.")
+        return message.channel.send("Aye! Parece que esse comando não existe, digite ?help para ver os comandos disponíveis.")
     }
 
 });
