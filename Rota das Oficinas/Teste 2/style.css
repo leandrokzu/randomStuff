@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    font-size: 1rem;
+    margin: 5px;
+    width: 100px;
+}
+
+#canvas{
+    margin: 50px;
+    background: black;
+}
