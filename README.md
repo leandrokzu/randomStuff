@@ -1,2 +1,1 @@
-# cookbook
-Trying to practice some JS and etc...
+This repo is a collection of every tiny project i had develop.
