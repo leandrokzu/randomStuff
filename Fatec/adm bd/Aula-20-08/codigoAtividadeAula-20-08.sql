@@ -1,7 +1,7 @@
-/* atividadePraticaAula-20-08: */
-CREATE DATABASE DBAtividade1
+/* atividadeAula-20-08: */
+CREATE DATABASE DBAula1
 
-USE DBAtividade1
+USE DBAula1
 
 CREATE TABLE TBCargo (
     IDCargo int PRIMARY KEY,
