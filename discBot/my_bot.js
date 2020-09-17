@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = "?";
-const token = "NzQzNDY0ODY3Njc1MjQyNTc2.XzVDnQ.DAAyql-4B160HSQbTFnXtjR3B2w"
-const commands = ['wow', 'ah', 'yamete', "an", "happy", "ayaya", "begone", "oof", "rapaz", "ratinho", "uepa", "pressao"];
+const token = "" //token do bot
+const commands = ['wow', 'ah', 'yamete', "an", "happy", "ayaya", "begone", "oof","now the wor", "rapaz", "ratinho", "uepa", "pressao", "double biceps"];
 
 bot.on('message', message => {
     //para ignorar caso a msg seja do proprio bot
@@ -11,6 +11,8 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix)) return;
     //filtrando o comando para usa-lo no if
     const command = message.content.split("?")[1];
+
+    if (command == "") return;
     //criando mensagem de help
     const helpMessage = new Discord.MessageEmbed()
         .setColor('#0099ff')
